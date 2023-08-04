@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+body{
+    background-color: hsl(185, 41%, 84%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 24px;
+    width: 50%;
+    margin: 10% auto 0 auto;
+    height: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.div-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 50%;
+    margin-right: 24px;
+    padding-left: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bill1{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-bill{
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    border: 0px;
+    font-weight: 600;
+    height: 30px;
+    margin-top: 5px;
+    text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.select{
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
 }
+
+.select button{
+    border: 0;
+    width: 80px;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color:hsl(0, 0%, 100%) ;
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+}
+
+.select button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%)
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Space Mono', monospace;
+    color: hsl(184, 14%, 56%);
+    margin-bottom: 8px;
+}
+
+.input-numberpeople{
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    border: 0px;
+    font-weight:600;
+    color: hsl(183, 100%, 15%);
+    height: 30px;
+    margin-top: 5px;
+    text-align: right;    
+}
+
+.div-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:hsl(183, 100%, 15%);
+    padding: 32px;
+    border-radius: 16px;
+    width: 50%;
+    margin-left: 16px;
+}
+
+.tip{
+    color: white;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tipamount{
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.total{
+    color: white;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+}
+
+#totalperson{
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.reset{
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+}
+
+.reset #button-reset{
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: hsl(183, 100%, 15%);
+    font-size: 16px;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(172, 67%, 45%);
+    width: 100%;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.reset #button-reset:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
